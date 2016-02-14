@@ -1,0 +1,20 @@
+{
+  "name": "mithril-armor",
+  "version": "0.0.1",
+  "description": "A composition utility for Mithril.js",
+  "main": "mithril-armor.js",
+  "scripts": {
+    "build:prod": "browserify -t uglifyify src/mithril-armor.js -o dist/mithril-armor.min.js",
+    "build:dev": "browserify src/mithril-armor.js -o dist/mithril-armor.js",
+    "build": "npm run build:dev && npm run build:prod"
+  },
+  "author": "Bradley Stafford",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "chai": "^3.5.0",
+    "mithril": "^0.2.2-rc.1",
+    "mocha": "^2.4.5",
+    "uglifyify": "^3.0.1"
+  }
+}
