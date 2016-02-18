@@ -1,9 +1,10 @@
-function isEqual(a, b) {
+function equal(a, b) {
   return a === b;
 }
 
-function isObject(obj) {
-  return {}.toString.call(obj) === '[object Object]';
+function object(obj) {
+  var type = typeof obj;
+  return !!obj && (type === 'object' || type === 'function') ;
 }
 
 function predicate(predicate, index, collection) {
@@ -11,7 +12,7 @@ function predicate(predicate, index, collection) {
 }
 
 module.exports = {
-  isEqual: isEqual,
-  isObject: isObject,
+  equal: equal,
+  object: object,
   predicate: predicate
 }
