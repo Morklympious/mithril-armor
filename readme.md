@@ -41,7 +41,9 @@ var arduous   = danger('This is arduous');
 var upsetting = danger('This is upsetting');
 ````
 
-At the end of the day, these parameters will be called via mithril, so mixing and matching with mithril calls isn't a problem.
+At the end of the day, these parameters will be called via mithril, so mixing and matching with Mithril calls isn't a problem.
+
+You can call the final parameter on an element and store it in a variable, or you can feel free to extend off of the base element `button` that was defined previously
 
 ````js
 var component = {
@@ -50,7 +52,9 @@ var component = {
       perilous,
       arduous,
       upsetting,
-      m('button', 'Not very upsetting')
+      button({class: 'custom'}, 'Based off button'),
+      button({class: 'other'}, 'Other button'),
+      m('button', 'THE ORIGINAL. THE O.G.')
     ])
   }
 }
