@@ -1,4 +1,4 @@
-var m          = global.m;
+var m          = require('mithril');
 var voids      = require('../util/void-elements');
 
 // Mithril Armor
@@ -6,7 +6,7 @@ function armor() {
   var base   = _fragments(arguments),
       arglen = base.length;
 
-  if (_shouldCallMithril(base)) {
+  if (_m(base)) {
     return m.apply(null, base);
   }
 
@@ -63,18 +63,16 @@ function _objectness(element) {
 }
 
 
-function _shouldCallMithril(base) {
+function _m(base) {
 
   // Return true if:
   //  - It's a non-void element with 3 arguments
   //  - It's a void element with two arguments.
 
   var arglen = base.length;
-  var shouldCall = ((arglen === 2 && _voidness(base[0])) || arglen === 3)
+  var invoke = ((arglen === 2 && _voidness(base[0])) || arglen === 3)
 
-  if(shouldCall) {
-    return true;
-  }
+  return invoke;
 }
 
 // Attach to global object.

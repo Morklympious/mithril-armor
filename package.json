@@ -4,8 +4,8 @@
   "description": "A composition utility for Mithril.js",
   "main": "src/mithril-armor.js",
   "scripts": {
-    "build:prod": "browserify -t uglifyify src/mithril-armor.js -o dist/mithril-armor.min.js",
-    "build:dev": "browserify src/mithril-armor.js -o dist/mithril-armor.js",
+    "build:prod": "browserify --external mithril -t uglifyify src/mithril-armor.js -o dist/mithril-armor.min.js",
+    "build:dev": "browserify --external mithril src/mithril-armor.js -o dist/mithril-armor.js",
     "build": "npm run build:dev && npm run build:prod",
     "test": "mocha"
   },
