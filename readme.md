@@ -119,4 +119,4 @@ This is not a catch-all tool for every element you're going to run into when you
 ## Thanks!
 
 Thanks for checking out the repo!
-Thanks to [@lhorie](https://github.com/lhorie) for creating mithril, [@tivac](https://github.com/tivac) for introducing me to mithril, and the [Mithril gitter chatroom](https://gitter.im/lhorie/mithril.js) for being awesome people!
+Thanks to [@lhorie](https://github.com/lhorie) for creating Mithril, [@tivac](https://github.com/tivac) for introducing me to Mithril, and the [Mithril gitter chatroom](https://gitter.im/lhorie/mithril.js) for being awesome people!
