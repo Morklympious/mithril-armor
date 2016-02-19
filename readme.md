@@ -11,7 +11,9 @@ This script exposes itself both as a commonjs module you can use via `require` a
 Mithril Armor will respect anything that currently exists on the window object.
 it currently attaches itself to `window.a` (also `window.armor`) if there's nothing there. Otherwise it doesn't attach itself at all.
 
-I'm still debating whether or not to attach it to the `window.m` object.
+I'm still debating whether or not to attach it to the `window.m` object. Is that bad form? that's probably bad form.
+
+__note:__ At current, `mithril-armor.js` `require`s `mithril`, so if you're planning to use the `dist` files, mithril already comes included. If you want armor only, in `src/mithril-armor.js` replace `var m = require('mithril')` with `var m = global.m;` and then run `npm run build`
 
 ### Developing
 1. `npm install`
@@ -119,4 +121,4 @@ This is not a catch-all tool for every element you're going to run into when you
 ## Thanks!
 
 Thanks for checking out the repo!
-Thanks to [@lhorie](https://github.com/lhorie) for creating mithril, [@tivac](https://github.com/tivac) for introducing me to mithril, and the [Mithril gitter chatroom](https://gitter.im/lhorie/mithril.js) for being awesome people!
+Thanks to [@lhorie](https://github.com/lhorie) for creating Mithril, [@tivac](https://github.com/tivac) for introducing me to Mithril, and the [Mithril gitter chatroom](https://gitter.im/lhorie/mithril.js) for being awesome people!
