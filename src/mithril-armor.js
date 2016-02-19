@@ -30,20 +30,20 @@ function armor() {
       return armor.apply(null, args);
     }
 
-    // Satisfactory parameters, call m()
+    // Reached only if there are satisfactory parameters
     return m.apply(null, args);
   }
 
 }
 
 // Fragments
-// Creates array from Arguments Object.
+// Used to keep messy calls out of main function
 function _fragments(args) {
   return [].slice.call(args);
 }
 
 // Conditions
-// Evaluates array of predicates.
+// Used to keep messy calls out of main function
 function _conditions(conditions) {
   return conditions.every(function(predicate){
     return predicate;
@@ -51,16 +51,17 @@ function _conditions(conditions) {
 }
 
 // Voidness
-// Tells us whether or not an element is in the voids list
+//  Used to keep messy calls out of main function
 function _voidness(element) {
   return voids.indexOf(element) > -1;
 }
 
 // Objectness
-// Determines if 'element' is an object
+//  Used to keep messy calls out of main function
 function _objectness(element) {
   return {}.toString.call(element) === '[object Object]'
 }
+
 
 function _shouldCallMithril(base) {
 
