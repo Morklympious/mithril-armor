@@ -35,6 +35,24 @@ describe('Composition', function() {
       expect(fObj.attrs.className).to.equal('container');
     })
 
+    it("a(className) return fn can handle array.map for children", function() {
+      var arr = [1,2,3,4,5];
+      var button = a('button');
+      var container = a('.container');
+      var aObj = container(arr.map(function(element){
+        return button(element);
+      }));
+
+      var mObj = m('.container', arr.map(function(element) {
+        return m('button', element);
+      }))
+
+
+      expect(aObj).to.eql(mObj);
+
+
+    })
+
     describe('extending non-void armor elements', function() {
       var container = a('div'),
           button = a('button');
