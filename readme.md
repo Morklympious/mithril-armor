@@ -13,7 +13,7 @@ it currently attaches itself to `window.a` (also `window.armor`) if there's noth
 
 I'm still debating whether or not to attach it to the `window.m` object. Is that bad form? that's probably bad form.
 
-__note:__ At current, `mithril-armor.js` `require`s `mithril`, so if you're planning to use the `dist` files, mithril already comes included. If you want armor only, in `src/mithril-armor.js` replace `var m = require('mithril')` with `var m = global.m;` and then run `npm run build`
+__note:__ At current, `mithril-armor.js` references `m` as `global.m` as opposed to `require('mithril')`. You can certainly change this if you're bundling all your scripts together, but I wanted to make sure it ran in the browser fine by itself. 
 
 ### Developing
 1. `npm install`

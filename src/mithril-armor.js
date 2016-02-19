@@ -1,4 +1,4 @@
-var m          = require('mithril');
+var m          = global.m;
 var voids      = require('../util/void-elements');
 
 // Mithril Armor
