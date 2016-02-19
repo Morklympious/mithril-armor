@@ -110,9 +110,9 @@ This approach works especially well if you're like me and you enjoy decoupling E
 This tool is meant for you to group together and create small pieces of mithril calls (thematically, I like to call them fragments) that you will eventually group together to create Mithril objects.
 
 ### What this tool is _not_ for
-This is not a catch-all tool for every element you're going to run into when you're coding your virtual dom tree, it's meant as a utility to make crafting Mithril calls based on a single established variable. If it doesn't work for your use case, you should ask yourself "Could I just call Mithril directly here? ", andthat'll be just fine!
+This is not a catch-all tool for every element you're going to run into when you're coding your virtual dom tree, it's meant as a utility to make crafting Mithril calls based on a single established variable. If it doesn't work for your use case, you should ask yourself "Could I just call Mithril directly here?", and most of the time the answer will be YES. that'll be just fine!
 
 ## Thanks!
 
 Thanks for checking out the repo!
-Thanks to @lhorie for creating mithril, @tivac for introducing me to mithril, and the gitter chatroom for being awesome people!
+Thanks to [@lhorie](https://github.com/lhorie) for creating mithril, [@tivac](https://github.com/tivac) for introducing me to mithril, and the [Mithril gitter chatroom](https://gitter.im/lhorie/mithril.js) for being awesome people!
