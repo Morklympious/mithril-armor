@@ -75,8 +75,4 @@ function _m(base) {
   return invoke;
 }
 
-// Attach to global object.
-global.a     = global.a     || armor;
-global.armor = global.armor || armor;
-
 module.exports = armor;
