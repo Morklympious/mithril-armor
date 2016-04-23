@@ -1,6 +1,6 @@
 {
   "name": "mithril-armor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A composition utility for Mithril.js",
   "main": "src/mithril-armor.js",
   "scripts": {
