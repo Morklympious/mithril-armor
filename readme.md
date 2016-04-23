@@ -6,14 +6,13 @@ Mithril Armor is this fun little idea I had to make reusable Mithril calls via p
 
 ## How can I use it?
 
-This script exposes itself both as a commonjs module you can use via `require` and as an object on the `window`.
+This script exposes itself both as a commonjs module you can use via `require`.
 
-Mithril Armor will respect anything that currently exists on the window object.
-it currently attaches itself to `window.a` (also `window.armor`) if there's nothing there. Otherwise it doesn't attach itself at all.
+```js
+var armor = require('mithril-armor');
+```
 
-I'm still debating whether or not to attach it to the `window.m` object. Is that bad form? that's probably bad form.
-
-__note:__ At current, `mithril-armor.js` references `m` as `global.m` as opposed to `require('mithril')`. You can certainly change this if you're bundling all your scripts together, but I wanted to make sure it ran in the browser fine by itself. 
+I also prefer using `a` instead of `armor`, since Mithril is `m`.
 
 ### Developing
 1. `npm install`
