@@ -1,6 +1,6 @@
 {
   "name": "mithril-armor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A composition utility for Mithril.js",
   "main": "src/mithril-armor.js",
   "scripts": {
@@ -11,6 +11,14 @@
   },
   "author": "Bradley Stafford",
   "license": "MIT",
+  "keywords": [
+    "mithril",
+    "utility",
+    "composition"
+  ],
+  "dependencies": {
+    "mithril": "^0.2.2-rc.1",
+  },
   "devDependencies": {
     "browserify": "^13.0.0",
     "chai": "^3.5.0",

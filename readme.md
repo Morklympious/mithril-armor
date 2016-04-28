@@ -6,7 +6,7 @@ Mithril Armor is this fun little idea I had to make reusable Mithril calls via p
 
 ## How can I use it?
 
-This script exposes itself both as a commonjs module you can use via `require`.
+This script exposes itself as a commonjs module you can use via `require`.
 
 ```js
 var armor = require('mithril-armor');
